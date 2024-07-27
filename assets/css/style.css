@@ -1,0 +1,140 @@
+@import 'media.css';
+
+*{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body {
+    overflow: hidden;
+}
+
+.playwrite-pe-logo-font {
+    font-family: "Playwrite PE", cursive;
+    font-optical-sizing: auto;
+  }
+
+.navbar {
+    width: 95%;
+    background: transparent;
+}
+
+.navbar-link, a.navbar-item {
+    background-color: unset !important;
+    margin-right: 12px;
+}
+
+#home .explore-genres {
+    background-color: transparent;
+    border: 1;
+}
+
+.full-page-background {
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.full-page-background::before {
+    background-color: rgba(60, 60, 60, 0.5);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.custom-hero-body {
+    width: 75%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.custom-hero-on-sale {
+    flex-grow: unset !important;
+}
+
+.button {
+    border-radius: unset !important;
+}
+
+
+.flex-button button {
+    margin-right: 8px;
+}
+
+#on-sale {
+    height: auto;
+}
+
+#on-sale .box {
+    max-width: 100%; 
+    margin: 0 auto;
+    cursor: pointer;
+ 
+}
+
+.box {
+    border-radius: unset !important;
+}
+
+.btn-bordered {
+    border: 1px solid #1e1e1e;
+}
+
+#about-us {
+    height: 100vh; 
+    display: flex; 
+    align-items: center;
+}
+
+#about-us .columns {
+    flex-grow: 1;
+}
+
+#about-us .column {
+    padding: 0; 
+    display: flex; 
+    align-items: center;
+}
+
+#about-us .column figure {
+    flex-grow: 1; 
+    height: 100%;
+    cursor: pointer;
+}
+
+#about-us .column figure img {
+    height: 100%; 
+    width: 100%; 
+    object-fit: cover;
+
+}
+
+#about-us .right-col {
+    border-style: normal;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+#about-us .right-col .about-us-column {
+    width: 85%;
+}
+
+#contact-us input, #contact-us textarea {
+    border-radius: unset !important;
+}
+
+#contact-us .custom-hero-body {
+    width: 70%;
+    max-width: 930px;
+    margin: 0 auto;
+}

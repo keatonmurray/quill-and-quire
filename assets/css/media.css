@@ -1,0 +1,38 @@
+@media (max-width: 768px) {
+    .full-page-background {
+        background-size: contain;
+    }
+}
+
+@media (max-width: 1024px) {
+    .navbar .navbar-item, .navbar .shop-now {
+        display: none;
+    }
+
+    .navbar-burger {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .navbar-burger i {
+        color: white;
+        font-size: 2rem;
+    }
+    
+    .navbar-burger {
+        width: 45px;
+    }
+}
+
+@media (max-width: 550px) {
+    .flex-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flex-button button {
+        margin-right: 12px;
+    }
+}
+
