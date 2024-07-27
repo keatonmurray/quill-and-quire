@@ -11,7 +11,7 @@
         }
         public function index($page = 'layout')
         {
-            if ( ! file_exists(APPPATH.'views/pages/'.$page.'.php'))
+            if ( ! file_exists(APPPATH.'views/main/'.$page.'.php'))
             {
                 show_404();
             }
@@ -22,6 +22,6 @@
             $data['about_us'] = $this->load->view('section/about-us', NULL, TRUE);
             $data['contact_us'] = $this->load->view('section/contact-us', NULL, TRUE);
             
-            $this->load->view('pages/'.$page, $data);
+            $this->load->view('main/'.$page, $data);
         }
     }
