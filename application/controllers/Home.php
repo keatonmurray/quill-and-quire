@@ -24,4 +24,5 @@
             
             $this->load->view('main/'.$page, $data);
         }
+
     }
