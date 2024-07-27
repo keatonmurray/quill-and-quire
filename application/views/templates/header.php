@@ -13,7 +13,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Playwrite+PE:wght@100..400&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/5dfbc71075.js" crossorigin="anonymous"></script>
-        <script type="module" src="assets/js/main.js"></script>
+        <script type="module" src="<?php echo base_url('assets/js/main.js'); ?>"></script>
     </head>
     <body>
         
