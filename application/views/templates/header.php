@@ -13,6 +13,15 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Playwrite+PE:wght@100..400&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/5dfbc71075.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            var siteUrls = {
+                contactStore: "<?php echo site_url('contact/store'); ?>",
+                home: "<?php echo site_url(''); ?>"
+            };
+        </script>
         <script type="module" src="<?php echo base_url('assets/js/main.js'); ?>"></script>
     </head>
     <body>

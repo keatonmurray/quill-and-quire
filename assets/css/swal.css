@@ -1,0 +1,15 @@
+.swal2-popup {
+    background: #fff !important;
+    color: #000 !important;
+}
+.swal2-title {
+    color: #333 !important;
+}
+.swal2-html-container {
+    color: #555 !important;
+}
+.swal2-confirm, .swal2-cancel {
+    background-color: #3085d6 !important;
+    color: #fff !important;
+    border-radius: unset !important;
+}

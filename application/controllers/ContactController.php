@@ -25,7 +25,7 @@
                 [
                     'field' => 'author_email_address',
                     'label' => 'Email address',
-                    'rules' => 'required'
+                    'rules' => 'required|valid_email'
                 ],
                 [
                     'field' => 'author_phone_number',
@@ -39,14 +39,20 @@
                 ]
             ]);
 
-            if ($this->form_validation->run() === FALSE)
-            {
-                echo "Error!";
-
+            if ($this->form_validation->run() === FALSE) {
+                $response = [
+                    'status' => 'error',
+                    'message' => validation_errors()
+                ];
             } else {
-                
-                $this->contact->send_message();
-                redirect('http://localhost/quill_and_quire/');
+                if ($this->contact->send_message()) {
+                    $response = [
+                        'status' => 'success',
+                        'message' => 'Message sent successfully'
+                    ];
+                } 
             }
+            
+            echo json_encode($response);
         }
     }

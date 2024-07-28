@@ -15,5 +15,6 @@
     <section id="contact-us" class="hero is-fullheight">
         <?php echo $contact_us; ?>
     </section>
+    <script src="<?php echo base_url('assets/js/errors.js'); ?>"></script>
     
 <?php $this->load->view('templates/footer'); ?>
