@@ -5,12 +5,48 @@
         public function __construct()
         {
             parent::__construct();
-            $this->load->helper('url');
+            $this->load->library('form_validation');
+            $this->load->model('contact');
         }
 
-        //send email
         public function store()
         {
-            
+            $validate = $this->form_validation->set_rules([
+                [
+                    'field' => 'author_first_name',
+                    'label' => 'First name',
+                    'rules' => 'required'
+                ],
+                [
+                    'field' => 'author_last_name',
+                    'label' => 'Last name',
+                    'rules' => 'required'
+                ],
+                [
+                    'field' => 'author_email_address',
+                    'label' => 'Email address',
+                    'rules' => 'required'
+                ],
+                [
+                    'field' => 'author_phone_number',
+                    'label' => 'Phone number',
+                    'rules' => 'required'
+                ],
+                [
+                    'field' => 'author_message',
+                    'label' => 'Message',
+                    'rules' => 'required'
+                ]
+            ]);
+
+            if ($this->form_validation->run() === FALSE)
+            {
+                echo "Error!";
+
+            } else {
+                
+                $this->contact->send_message();
+                redirect('http://localhost/quill_and_quire/');
+            }
         }
     }

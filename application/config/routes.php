@@ -54,4 +54,5 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 // $route['translate_uri_dashes'] = FALSE;
 
 $route['default_controller'] = 'HomeController';
+$route['contact/store'] = 'ContactController/store';
 // $route['(:any)'] = 'pages/view/$1';

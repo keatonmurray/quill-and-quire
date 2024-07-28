@@ -10,6 +10,7 @@
             parent::__construct();
             $this->load->helper('url');
             $this->load->model('home');
+            // $this->load->helper('form');
         }
         public function index($page = 'layout')
         {
