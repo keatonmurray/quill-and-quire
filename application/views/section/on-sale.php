@@ -14,12 +14,14 @@
                                     </figure>
                                     <h1 class="title is-6 has-text-weight-normal"><?php echo $book['book_title']; ?></h1>
                                     <p class="subtitle is-6 has-text-weight-normal"><?php echo $book['book_author']; ?></p>
-                                    <p>$<?php echo $book['book_price']; ?></p>
+                                    <p class="has-text-weight-bold">$<?php echo $book['book_price']; ?></p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 <?php endforeach; ?>
+                <?php else: ?>
+                <h2 class="title has-text-weight-normal is-6">Oops! Our Bookshelves are Still Empty</h2>
             <?php endif; ?>
         </div>
     </div>
