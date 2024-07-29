@@ -10,8 +10,8 @@
             parent::__construct();
             $this->load->helper('url');
             $this->load->model('home');
-            // $this->load->helper('form');
         }
+        
         public function index($page = 'layout')
         {
             if ( ! file_exists(APPPATH.'views/main/'.$page.'.php'))

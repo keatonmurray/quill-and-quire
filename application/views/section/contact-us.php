@@ -2,7 +2,7 @@
     <div class="container has-text-centered">
         <h1 class="is-size-4 has-text-weight-semibold">Curious about something?</h1>
         <p class="mb-4 is-uppercase">We love friendly hellos!</p>
-        <form id="contactForm" action="<?php echo site_url('contact/store'); ?>" method="POST">
+        <form id="contactForm" action="<?php echo site_url('contact/send_email'); ?>" method="POST">
             <div class="columns is-multiline mt-5">
                 <div class="column is-12-mobile is-6-tablet is-6-desktop">
                     <div class="field has-text-left">
