@@ -40,8 +40,17 @@
                                 </a>
                             </p>
                             <p class="control is-expanded">
-                                <input name="author_phone_number" class="input is-medium" type="tel">
+                                <input name="author_phone_number" class="input is-medium" type="tel" placeholder="(123)-456-7890">
                             </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-12-mobile is-12-tablet is-12-desktop">
+                <div class="field has-text-left">
+                        <label for="author_subject" class="label">Subject</label>
+                        <div class="control">
+                        <input type="text" name="author_subject" class="input is-medium" placeholder="">
                         </div>
                     </div>
                 </div>
